@@ -7,6 +7,7 @@
 
 
 >I have made this project to learn React by building applications
+>
 ![Wizard Poster](https://github.com/OlaCharn/harry-potter-poster-api/blob/main/src/Poster.png?raw=true)
 9¾ ⚯ 🗲 
 
