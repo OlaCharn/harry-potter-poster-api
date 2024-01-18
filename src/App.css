@@ -1,38 +1,654 @@
-.App {
-  text-align: center;
+body{
+  background: url(https://cdn.glitch.global/3e4b2c6a-4f15-49a3-a6b6-6dc52ca58d4f/DesktopNew.jpg?v=1695202000956);
+  /*background: url(vintage-grunge-paper-background.jpg);*/
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Width{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.BorderForAll{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: #000 solid 2px;
+}
+
+/*CharactersAll*/
+.characters{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
+  max-height: 1217px;
+  width: 600px;
+
+}
+.cardOfCharacter{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/*CharactersApi*/
+
+.AvatarImage{
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.h2{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+
+}
+.NavBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 593px;
+flex-shrink: 0;
+background: #070707;
+margin-bottom: 25px;
+}
+.LinkDecor{
+  text-decoration: none;
+}
+.NavChar{
+  color: #FCF7E1;
+  text-align: center;
+  font-family: Henny Penny;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.5px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.CharactersHeadline{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+
+}
+input{
+  width: 585px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #0D0C0C;
+  color: #FCF7E1;
+  font-family: Henny Penny;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.5px;
+}
+::placeholder{
+  color: #FCF7E1;
+  font-family: Henny Penny;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.5px;
+}
+.ListofCharacters{
+  color: #000;
+  font-family: Henny Penny;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.CharacterName{
+  color: #000;
+  text-align: center;
+  font-family: Griffy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.DivideLine{
+  border-right: #000 3px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+.CharacterNameAPI{
+  color: #000;
+  font-family: Griffy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.CharacterNameAPIh2{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+li{
+  list-style: none;
+}
+
+/*Heading*/
+.HeadAndBlocks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Rectangle{
+  height: 45px;
+  background: #020202;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 600px;
+}
+.Head{
+  width: 172px;
+  height: 175px;
+}
+.HarryPotter{
+  color: #000;
+  text-align: center;
+  font-family: Henny Penny;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.5px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+}
+.SnitchAndSummary{
+  display: flex;
+  flex-direction: row;
+  margin-top: -50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.SummaryDisp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.Snitch{
+flex-shrink: 0;
+margin-left: 40px;
+align-self: center;
+}
+.Summary{
+  color: #000;
+text-align: center;
+font-family: Griffy;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 5.25px;
+}
+.BookPattern{
+  height: 85px;
+  align-self: center;
+  margin-top: -50px;
+}
+
+.MainDivider{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin-top: 100px;
+}
+.ExprCharacters{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+.BooksMoviesSpells{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+/*Expression*/
+.Expression{
+  width: 850px;
+  height: 376px;
+  transform: rotate(-6.069deg);
+  flex-shrink: 0;
+  margin-bottom: 0px;
+}
+.Pexpres{
+  color: #000;
+  text-align: center;
+  font-family: Henny Penny;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+/*Spells*/
+.SpellsBlock{
+  display: flex;
+  flex-direction: column;
+  border-top: #000 solid 3px;
+  margin-top: 20px;
+}
+.Stick{
+  width: 170px;
+  height: 298px;
+  transform: rotate(-26.866deg);
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+.Snitch{
+  width: 64px;
+  height: 69px;
+  flex-shrink: 0;
+  margin-top: 0px;
+}
+.ListofSpells{
+  align-self: flex-end;
+  width: 227px;
+  height: 55.89px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Henny Penny;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+}
+.SpellsButton{
+  background: transparent;
+  border: none;
+  align-self: flex-start;
+  height: 65px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Henny Penny;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.SpellsNameAndDescription{
+  display: flex;
+  flex-direction: column;
+}
+.SpellsDescription{
+  align-self: flex-end;
+  text-align: end;
+  width: 394px;
+  height: 46.254px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Griffy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10;
+  margin-right: 10px;
+}
+.SpellsName{
+  width: 595.58px;
+  height: 160.623px;
+  transform: rotate(-11.355deg);
+  flex-shrink: 0;
+  color: #000;
+  font-family: Henny Penny;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 8.5px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/*BooksMovies*/
+.BooksMovies{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.BooksMoviesName{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+}
+.CoverPoster{
+  width: 400px;
+}
+.ReleaseDate{
+  display: flex;
+  flex-direction: row;
+}
+.Release{
+  align-self: flex-end;
+  width: 216px;
+  height: 180px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Henny Penny;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  border-bottom: #000 solid 2px;
+  margin-right: -70px;
+}
+.Buttons{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.ChangeButton{
+  color: #000;
+  text-align: center;
+  font-family: Henny Penny;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  background: transparent;
+  border: none;  
+  margin-left: 150px;
+  cursor: pointer;
+}
+.Title{
+  color: #000;
+  font-family: Griffy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+.SummaryBookMovie{
+  color: #000;
+  font-family: EB Garamond;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.DirectorPage{
+  color: #000;
+  font-family: Henny Penny;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  align-self: flex-start;
+}
+/*Footer*/
+.MeName{
+  font-family: Henny Penny;
+  font-size: 15px;
+}
+.vCharnukha{
+  color: #000;
+  text-decoration: none;
+}
+@media all and (max-width:1456px){
+  .Rectangle{
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+@media all and (max-width:1403px){
+  .DivideLine{
+    border: none;
+  }
+  .Expression{
+    width: 618px;
+    height: 550px;
+    margin-top: 100px;
+  }
+
+
+}
+
+@media all and (max-width:1257px){
+  .Rectangle{
+    width: 400px;
+  }
+  .HarryPotter{
+    font-size: 160px;
+  }
+
+
+}
+@media all and (max-width:1056px){
+  .Rectangle{
+    width: 300px;
+  }
+  .HarryPotter{
+    font-size: 140px;
+  }
+
+}
+@media all and (max-width:970px){
+  .HarryPotter{
+    font-size: 140px;
+  }
+  .Summary{
+    font-size: 25px;
+  }
+  .Stick{
+    width: 306px;
+  }
+  .SpellsName{
+    font-size: 65px;
+  }
+  .SpellsDescription{
+    height: 150px;
+  }
+
+
+}
+@media all and (max-width:830px){
+
+  .HarryPotter{
+    font-size: 100px;
+    margin-top: 20px;
+  }
+  .Summary{
+    font-size: 25px;
+  }
+  .BookPattern{
+    height: 55px;
+    margin-top: 10px;
+  }
+  .BooksMoviesSpells{
+    width: 515px;
+  }
+  .Snitch{
+    width: 35px;
+    height: 76px;
+    margin-top: 10px;
+  }
+
+  .Head{
+    width: 100px;
+    height: 100px;
+  }
+  .Stick{
+    height: 500px;
+  }
+
+}
+@media all and (max-width:790px){
+  .Rectangle{
+    width: 250px;
+  }
+  .BooksMoviesSpells{
+    width: 485px;
+  }
+
+}
+@media all and (max-width:720px){
+  .BooksMoviesSpells{
+    width: 485px;
+  }
+  .SpellsButton{
+    height: 370px;
+  }
+  .Expression{
+    width: 681px;
+    height: 604px;
+  }
+
+}
+@media all and (max-width:700px){
+  .BookPattern{
+    height: 32px;
+  }
+  .CoverPoster{
+    width: 250px;
+  }
+  .Release{
+    font-size: 16px;
+  }
+  .BooksMoviesSpells{
+    width: 400px;
+  }
+
+  .BooksMoviesName{
+    width: 350px;
+  }
+  .ReleaseDate{
+    justify-content: center;
+  }
+  .SpellsName{
+    width: 350px;
+  }
+  .ExprCharacters{
+    width: 350px;
+  }
+  .NavBar{
+    width: 350px;
+  }
+  input{
+    width: 340px;
+  }
+  .characters{
+    width: 350px;
+  }
+  .Expression{
+    width: 350px;
+    height: 730px;
+  }
+  .Pexpres{
+    font-size: 55px;
+  }
+  .Rectangle{
+    width: 100px;
+  }
+  .ChangeButton{
+    font-size: 20px;
+    margin-left: 11px;
+  }
+  .Release{
+    width: 74px;
+    height: 119px;
+  }
+  .SpellsName{
+    font-size: 55px;
+  }
+  .SpellsButton{
+    height: 370px;
   }
 }
+@media all and (max-width:540px){
+  .BooksMoviesSpells{
+    width: 215px;
+  }
+  .Stick{
+    width: 125px;
+  }
+}
+
+@media all and (max-width:415px){
+  .Rectangle{
+    opacity: 0;
+    width: 50px;
+  }
+  .BooksMoviesSpells{
+    width: 215px;
+  }
+  .Summary{
+    font-size: 20px;
+  }
+  .BorderForAll{
+    border: none;
+    margin-left: 50px;
+  }
+  .Stick{
+    width: 125px;
+  }
+  .Snitch{
+    height: 1px;
+  }
+  .Expression{
+    width: 415px;
+  }
+  .ListofSpells{
+    height: 100px;
+  }
+  .SpellsName{
+    font-size: 25px;
+    transform: rotate(329deg);
+  }
+  .SpellsDescription{
+    height: 220px;
+    width: 150px;
+  }
+}
+@media all and (max-width:375px){
+  .Rectangle{
+    width: 50px;
+    opacity: 0;
+  }
+  .BorderForAll{
+    margin-left: 70px;
+  }
+}
+
