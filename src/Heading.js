@@ -1,6 +1,6 @@
-import head from "./hp_head-removebg-preview.png";
-import snitch from "./clipart3272313.png"
-import booksPattern from "./43445__2_-removebg-preview.png"
+import head from "./assets/hp_head-removebg-preview.png";
+import snitch from "./assets/clipart3272313.png"
+import booksPattern from "./assets/43445__2_-removebg-preview.png"
 import { useRef } from "react";
 import gsap from "gsap"; // <-- import GSAP
 import { useGSAP } from "@gsap/react"; // <-- import the hook from our React package

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import noImage from "./hp_head-removebg-preview.png"
+import noImage from "./assets/hp_head-removebg-preview.png"
 import { LoaderPage } from './Loader/LoaderPage';
 
 

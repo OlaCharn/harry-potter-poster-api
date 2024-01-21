@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import stick from "./stick-removebg-preview.png"
-import snitch from "./clipart3272313.png"
+import stick from "./assets/stick-removebg-preview.png"
+import snitch from "./assets/clipart3272313.png"
 import { useRef } from "react";
 import gsap from "gsap"; // <-- import GSAP
 import { useGSAP } from "@gsap/react"; // <-- import the hook from our React package

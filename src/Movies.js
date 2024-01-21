@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css"
-import triangleNext from "./icons8-triangle-64.png"
-import trianglePrevious from "./icons8-triangle-64-2.png"
+import triangleNext from "./assets/icons8-triangle-64.png"
+import trianglePrevious from "./assets/icons8-triangle-64-2.png"
 
 function Movies(){
 
