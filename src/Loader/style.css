@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #1a1a1a94;
+    background-color: #1a1a1a00;
     }
     
     .lds-roller {
@@ -23,7 +23,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #fff;
+    background: #d4aa1f;
     margin: -4px 0 0 -4px;
     z-index: 2;
     }

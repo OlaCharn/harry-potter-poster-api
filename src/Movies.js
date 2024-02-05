@@ -1,8 +1,33 @@
-import { useEffect, useState } from "react";
-import "./App.css"
-import triangleNext from "./assets/icons8-triangle-64.png"
-import trianglePrevious from "./assets/icons8-triangle-64-2.png"
+import React, { useEffect, useState } from "react";
+import Slider from "./Slider";
+import "./App.css";
 
+function Movies() {
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+    const getMovies = async () => {
+        const response = await fetch("https://potterhead-api.vercel.app/api/movies");
+        const data = await response.json();
+        setMovies(data);
+    };
+    getMovies();
+    }, []);
+
+    if (!movies || movies.length === 0) {
+    return <p>Loading...</p>;
+    }
+
+    return <Slider items={movies} />;
+}
+
+export default Movies;
+
+
+
+
+//my old part of code with slides
+/*
 function Movies(){
 
     //API
@@ -27,7 +52,7 @@ function Movies(){
     2. book[index]: Если массив book не пуст, тогда мы берем элемент массива по индексу index.
     3. : {}: Если массив book пуст, мы присваиваем пустой объект {}. 
     Таким образом, если book пуст, переменные cover, title, и serial будут иметь значения по умолчанию,
-    и не будет ошибки при деструктуризации.*/
+    и не будет ошибки при деструктуризации.
 
 
     const previousMovie =() =>{
@@ -84,3 +109,4 @@ function Movies(){
 }
 export default Movies;
 
+*/
